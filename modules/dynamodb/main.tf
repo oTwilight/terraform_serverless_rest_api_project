@@ -6,7 +6,9 @@ resource "aws_dynamodb_table" "dynamodb_table" {
     name = var.partition_key
     type = var.type_of_partition_key
   }
-  tags = local.common_tags
+  tags = {
+    Environment = var.environment
+  }
 }
 
 

@@ -11,12 +11,6 @@ variable "type_of_partition_key" {
 variable "billing_mode" {
   type = string
 }
-
-##-------------- locals --------------##
-
-locals {
-    common_tags = {
-        Name         = "Table"
-        Environments = "dev"
-    }
+variable "environment" {
+  type = string
 }

@@ -5,7 +5,9 @@ variable "dynamodb_arn" {
   type = string
 }
 variable "dynamodb_actions" {
-  type = list(string)
+  description = "List of DynamoDB actions for the IAM policy"
+  type        = list(string)
+  default     = ["dynamodb:GetItem", "dynamodb:PutItem"]
 }
 variable "role_json" {
   type = string

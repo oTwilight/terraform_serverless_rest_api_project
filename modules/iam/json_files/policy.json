@@ -1,13 +1,10 @@
 {
-  "Version": "2012-10-17",
-  "Statement": [
+ "Version": "2012-10-17",
+    "Statement":  [
     {
       "Effect": "Allow",
-      "Action": [
-        "dynamodb:PutItem",
-        "dynamodb:GetItem"
-      ],
-      "Resource": "*"
+      "Action": ["var.dynamodb_actions"],
+      "Resource" : "var.dynamodb_arn"
     },
     {
       "Effect": "Allow",
@@ -18,5 +15,5 @@
       ],
       "Resource": "*"
     }
-  ]
-}
+    ]
+  }

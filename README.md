@@ -6,19 +6,22 @@ This project deploys a serverless REST API using AWS Lambda, DynamoDB, and API G
 
 ### Project Structure
 
+```
 project-root/
+├── dev/
 ├── modules/
 │   ├── dynamodb/
 │   ├── iam/
 │   ├── lambda/
 │   └── apigateway/
 ├── envs/
-│   └── dev/
-│       ├── main.tf
-│       ├── variables.tf
-│       ├── outputs.tf
-│       └── terraform.tfvars
+├── main.tf
+├── variables.tf
+├── outputs.tf
+├── terraform.tfvars
 └── README.md
+```
+
 
 ---
 

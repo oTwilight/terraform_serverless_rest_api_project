@@ -21,8 +21,6 @@ project-root/
 ├── terraform.tfvars
 └── README.md
 ```
-
-
 ---
 
 ## Features
@@ -48,6 +46,8 @@ AWS CLI configured (aws configure)
 Python (for local zip packaging, if needed)
 
 zip installed (sudo apt install zip or brew install zip)
+
+---
 
 ```bash
 1. Clone the Repository

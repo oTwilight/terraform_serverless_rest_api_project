@@ -8,19 +8,37 @@ This project deploys a serverless REST API using AWS Lambda, DynamoDB, and API G
 
 ```
 project-root/
-├── dev/
-├── modules/
-│   ├── dynamodb/
-│   ├── iam/
-│   ├── lambda/
-│   └── apigateway/
 ├── envs/
-├── main.tf
-├── variables.tf
-├── outputs.tf
-├── terraform.tfvars
+│   └── dev/
+│       ├── .gitignore
+│       ├── backend.tf
+│       ├── main.tf
+│       ├── output.tf
+│       ├── provider.tf
+│       └── variables.tf
+├── modules/
+│   ├── api/
+│   │   ├── main.tf
+│   │   ├── output.tf
+│   │   └── variables.tf
+│   ├── dynamodb/
+│   │   ├── main.tf
+│   │   ├── output.tf
+│   │   └── variables.tf
+│   ├── iam/
+│   │   ├── main.tf
+│   │   ├── output.tf
+│   │   └── variables.tf
+│   └── lambda/
+│       ├── code_function/
+│       │   ├── lambda_handler.py
+│       │   └── lambda_handler.zip
+│       ├── main.tf
+│       ├── output.tf
+│       └── variables.tf
 └── README.md
 ```
+
 ---
 
 ## Features
